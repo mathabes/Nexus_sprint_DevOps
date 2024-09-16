@@ -55,6 +55,9 @@ Basta seguir os seguintes passos:
 
 4. Agora, basta clicar em **Publicar**.
 
+5. Por fim, é preciso adicionar a seguinte variável de ambiente:
+   - Nome: ConnectionStrings__NXContext | Valor: Data Source=oracle.fiap.com.br:1521/orcl;User ID=rm99585;Password=210305;
+
 
 # ⚙ Configurações da Máquina
 - Sistema Operacional: Linux
