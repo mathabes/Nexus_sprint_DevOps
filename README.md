@@ -48,14 +48,15 @@ Utilizamos o deploy integrado da IDE Visual Studio. A partir dela é possível u
 Basta seguir os seguintes passos: 
 
 1. Selecione a API clicando com o botão direito e, depois, em **Publicar**.
+   
 ![image](https://github.com/user-attachments/assets/283210ac-b7a6-49f1-afa1-2ef59e96c561)
 
-2. Clique em **Adicionar Perfil > Importar perfil** e importe o arquivo de Perfil de Publicação instalado a partir do Webapp da Azure.
+3. Clique em **Adicionar Perfil > Importar perfil** e importe o arquivo de Perfil de Publicação instalado a partir do Webapp da Azure.
 
-3. Agora, basta clicar em **Publicar**.
+4. Agora, basta clicar em **Publicar**.
 
 
-## 🚀 Configurações da Máquina
+# ⚙ Configurações da Máquina
 - Sistema Operacional: Linux
 - Plano F1 (1GB RAM, 1GB HDD, vCPU Compartilhada)
 - Pilha de Runtime: .NET Core - 8.0
