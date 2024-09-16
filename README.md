@@ -60,3 +60,4 @@ Basta seguir os seguintes passos:
 - Sistema Operacional: Linux
 - Plano F1 (1GB RAM, 1GB HDD, vCPU Compartilhada)
 - Pilha de Runtime: .NET Core - 8.0
+- Server: Brazil South
