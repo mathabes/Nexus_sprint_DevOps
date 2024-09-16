@@ -12,23 +12,12 @@
 - Erick K. da Silva - RM 550371
 
 - --------------------------------------------------
-## 🏛 Arquitetura<h3>
-
-Optamos por uma arquitetura monolítica pois o projeto tem um escopo definido e as funcionalidades são bem integradas, facilitando a comunicação entre os módulos. Além disso, como a aplicação é menor, o desenvolvimento e os testes são mais simples, já que se lida com um único aplicativo. Não há expectativa de grande crescimento ou mudanças complexas no curto prazo, então o monolito é mais prático e econômico para as necessidades atuais. Também ajuda a economizar nos custos de infraestrutura.
-- --------------------------------------------------
 ## 📚 Projeto 
 
 <p>Bem-vindo ao Nexus. O projeto consiste no desenvolvimento de um Chatbot funcional que utiliza o WhatsApp como plataforma principal. Esse Chatbot será capaz de se integrar a diversos sistemas externos, como APIs de inteligência artificial, e-commerce, e sistemas de recomendações. Isso permitirá oferecer um atendimento personalizado e eficaz aos clientes e usuários.</p>
 <p>O público-alvo do projeto Nexus são empresas que buscam soluções inovadoras para melhorar o atendimento ao cliente, aumentando assim, sua satisfação e consequentemente otimizando suas operações comerciais.</p>
 
 <br/>
-
-- --------------------------------------------------
-## 🧠 Design Patterns Utilizados
-
-- **Singleton**: Gerenciamento de configurações.
-- **Repository Pattern**: Para abstração do acesso a dados.
-- **Service Layer**: Desacoplamento da lógica de negócios.
 
 ## 📋 Endpoints
 
@@ -54,37 +43,19 @@ Optamos por uma arquitetura monolítica pois o projeto tem um escopo definido e 
 - `DELETE /api/Pedidos/{id}` - Exclui um pedido por ID.
 
 
-## 🚀 Como Rodar a Aplicação
+## 🚀 Deploy da Aplicação
+Utilizamos o deploy integrado da IDE Visual Studio. A partir dela é possível utilizar o arquivo de Perfil de Publicação do Webapp da Azure para implementar a aplicação na plataforma de maneira prática.
+Basta seguir os seguintes passos: 
 
-Pré-requisitos:
-- .NET 8 
-- Oracle Database
-- Visual Studio ou VS Code
-- Git  
+1. Selecione a API clicando com o botão direito e, depois, em **Publicar**.
+![image](https://github.com/user-attachments/assets/283210ac-b7a6-49f1-afa1-2ef59e96c561)
 
-Passos:
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/GuGodoi7/Nexus_sprint.git
-   cd Nexus_sprint
-   cd Nexus
-2. Configure a string de conexão no appsettings.json:
-    ```json
-      {
-        "ConnectionStrings": {
-              "NXContext": "Data Source=oracle.fiap.com.br:1521/orcl;User ID=xxxxx;Password=xxxxx;"
-        }
-      }
-3. Crie as tabelas no seu banco de dados (Execute esse comando no Console do Gerenciador de Pacotes. Além disso, selecione '_Nexus.Database' como Projeto padrão):
-     ```bash
-   Update-Database
+2. Clique em **Adicionar Perfil > Importar perfil** e importe o arquivo de Perfil de Publicação instalado a partir do Webapp da Azure.
 
-4. Restaure as dependências e execute a aplicação:
-     ```bash
-    dotnet restore
-    dotnet run --launch-profile https
-5. Acesse o Swagger (localhost varia de acordo com a maquina):
-    ```bash
-      https://localhost:7232/swagger/index.html
+3. Agora, basta clicar em **Publicar**.
 
-     
+
+## 🚀 Configurações da Máquina
+- Sistema Operacional: Linux
+- Plano F1 (1GB RAM, 1GB HDD, vCPU Compartilhada)
+- Pilha de Runtime: .NET Core - 8.0
